@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/982dff2523.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -13,11 +14,11 @@
             <nav>
                 <img src="images/Logo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -31,10 +32,10 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/Profile-Picture-2.png" width="50%" height="100%">
+                    <img src="images/Profile-Picture-2.png" width="100%" height="100%">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub title">About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quod iure necessitatibus quasi facere eum! Sunt cum assumenda necessitatibus unde. 
                         Excepturi aliquid earum mollitia pariatur magni eius nobis est, provident dolore!</p>
@@ -43,9 +44,9 @@
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
+                    </div>    
 
-                    <div class="tab-contents active-tab" id="skills"> 
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Full Stack</span><br>Designing Front/Back End</li>
                             <li><span>Frontend</span><br>User Interface Design</li>
@@ -55,24 +56,112 @@
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Full Stack</span><br>Designing Front/Back End</li>
-                            <li><span>Frontend</span><br>User Interface Design</li>
-                            <li><span>Backend</span><br>Database/API Development</li>
+                            <li><span>USIP VI Software Team Lead</span><br>Developing Tracking Software</li>
+                            <li><span>USIP VI Avionics Team Member</span><br>Designing Payload Circuits</li>
+                            <li><span>National Eclipse Ballooning Project</span><br>Data Analysis</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Full Stack</span><br>Designing Front/Back End</li>
-                            <li><span>Frontend</span><br>User Interface Design</li>
-                            <li><span>Backend</span><br>Database/API Development</li>
+                            <li><span>University of Houston</span><br>Bachelors of Computer Science</li>
                         </ul>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
+    <!--------------service---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum magni ut neque nihil ipsa velit rem expedita maiores temporibus sit repudiandae dolores unde, aperiam esse repellat cumque suscipit. Vitae.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-shield"></i>
+                    <h2>Cyber Security</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum magni ut neque nihil ipsa velit rem expedita maiores temporibus sit repudiandae dolores unde, aperiam esse repellat cumque suscipit. Vitae.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum magni ut neque nihil ipsa velit rem expedita maiores temporibus sit repudiandae dolores unde, aperiam esse repellat cumque suscipit. Vitae.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images\USIP_Web_HomePage.png" height="100%">
+                    <div class="layer">
+                        <h3>USIP Webpage</h3>
+                        <p>Main website for the University of Houston Undergraduate Student Instrument Project</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images\Keylogger.png">
+                    <div class="layer">
+                        <h3>Keylogger</h3>
+                        <p>Cyber Security Keylogger</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images\Data.png" height="100%">
+                    <div class="layer">
+                        <h3>Research Data</h3>
+                        <p>Radio Frequency Data collected and stored into USIP database</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>gurpreetsingh0204@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+1 7134981600</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/GPSin"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gurpreet-singh-29450a252/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Gurpreet_Singh_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <script>
         var tabLinks = document.getElementsByClassName("tab-links");
@@ -89,10 +178,26 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-
-
     </script>
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzGBK9HKQDeCkg11XDZQ5Maf4Bw1fjWoGf9Sbr-LS_dNIVKKF18WN48luEEinyI0MEbig/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
 </body>
 </html>
