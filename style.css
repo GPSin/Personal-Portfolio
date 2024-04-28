@@ -76,6 +76,12 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
+h1 span{
+    background: linear-gradient(to right, #ff004f, #ff6b08,#cf23cf, #ff004f);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .header-text span {
     color: #ff004f;
 }
